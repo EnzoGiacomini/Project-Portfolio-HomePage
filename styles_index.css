@@ -192,5 +192,49 @@ p, a, li {
 }
 #separator1 {
     position: relative;
+    width: 50%;
     top: 10px;
+}
+@media (max-width: 1800px) {
+    main {
+            grid-template-columns: 1fr;
+            margin: 20px;
+            justify-content: center;
+            gap: 20px;
+    }
+    #profile-picture {
+            width: 55%;
+    }
+    .icons{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    img {
+        width: 60%;
+        height: auto;
+    }
+    .web_dev {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .other-items {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        margin-left: 0px;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .icon {
+        display: none;
+    }
 }
